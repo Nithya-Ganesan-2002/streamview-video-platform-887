@@ -1,0 +1,28 @@
+@keyframes shimmer {
+  100% { background-position: 200% 0 }
+}
+.skeleton {
+  pointer-events: none;
+  animation: none;
+}
+.skeleton-block {
+  background: linear-gradient(90deg, #eee 30%, #f7f7f7 40%, #eee 60%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: var(--radius-lg);
+}
+.video-card.skeleton .video-thumbnail.skeleton-block {
+  width: 100%;
+  height: 156px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+.video-card.skeleton .video-avatar.skeleton-block {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.video-card.skeleton .skeleton-line {
+  background: #ddd;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}

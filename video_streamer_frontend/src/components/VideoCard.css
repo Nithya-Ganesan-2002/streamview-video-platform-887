@@ -1,0 +1,104 @@
+.video-card {
+  width: 276px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 3%);
+  margin: var(--spacing-16);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+.video-card:hover {
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 / 9%);
+}
+
+.video-thumbnail {
+  height: 156px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.video-duration {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  font-size: 13px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  z-index: 2;
+}
+.badge-live {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  background: #e53e3e;
+  color: #fff;
+  font-size: 12px;
+  border-radius: var(--radius-pill);
+  padding: 2px 10px 2px 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+}
+.video-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-f0f0f0);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.video-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.video-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #181818;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.video-channel {
+  color: var(--color-606060);
+  font-size: 14px;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.video-verified {
+  background: url('data:image/svg+xml;utf8,<svg aria-hidden="true" fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" fill="%23ff0000" r="7"/><path d="M10.2 5.6l-3.08 3.1a1 1 0 0 1-1.42 0L4 7.4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>');
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.video-stats {
+  color: var(--color-606060);
+  font-size: 13px;
+}

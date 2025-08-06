@@ -1,0 +1,23 @@
+/* Theme Variables, kept for dark/light toggle (used by Header) */
+:root {
+  --button-bg: #007bff;
+  --button-text: #ffffff;
+}
+[data-theme="dark"] {
+  --button-bg: #0056b3;
+  --button-text: #ffffff;
+}
+.App {
+  min-height: 100vh;
+  width: 100vw;
+}
+.theme-toggle {
+  margin-left: 12px;
+  background: var(--button-bg, #0056b3);
+  color: var(--button-text, #fff);
+  border: none;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
